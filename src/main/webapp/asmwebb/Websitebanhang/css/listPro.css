@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&family=JetBrains+Mono&family=Josefin+Sans&family=Open+Sans&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans';
+}
+
+.navbar-nav .nav-item {
+    padding: 0 15px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+
+.navbar-nav .nav-item .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+    content: '';
+    opacity: 0;
+    height: 1px;
+    width: 0;
+    display: block;
+    transition: 0.4s ease-out;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+    opacity: 1;
+    left: 0;
+    width: 100%;
+}
+
+.dropdown-mega .dropdown-menu {
+    width: 100%;
+}
+
+.dropdown-mega .list-group-item {
+    font-size: .9rem;
+    font-weight: 400;
+    border: 0;
+    padding: 10px 0;
+}
+
+.icon-link {
+    color: black;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    line-height: 1px;
+    z-index: 99;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+.card-sub-title ul {
+    display: flex;
+    padding-left: 0;
+}
+
+.card-sub-title ul li {
+    list-style: none;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.card-sub-title ul li a i {
+    font-size: 15px;
+    color: black;
+    background-color: rgb(240, 238, 238);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.card-sub-title button {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    outline: none;
+    transition: .5s;
+}
+
+.card-sub-title button:hover {
+    background-color: rgb(236, 234, 234);
+    border: none;
+    color: black;
+}
+
+.start-test {
+    color: yellow;
+    font-size: 12px;
+}
